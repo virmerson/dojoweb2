@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>br.com.fabricadeprogramador</groupId>
-	<artifactId>controlepresenca</artifactId>
+	<artifactId>pedidos</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>controlepresenca</name>
-	<description>Sistema de controle de presenca</description>
+	<name>Pedidos</name>
+	<description>Sistema de Pedidos Bem Casados</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
