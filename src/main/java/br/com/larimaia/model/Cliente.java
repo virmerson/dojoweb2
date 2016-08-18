@@ -2,13 +2,27 @@ package br.com.larimaia.model;
 
 import java.util.Date;
 
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity
+@Table(name = "tb_cliente")
 public class Cliente {
+	@Id
+	@GeneratedValue
 	private long id;
 	private String nome;
+	@Temporal(TemporalType.DATE)
 	private Date dataNascimento;
 	private String email;
 	private String telefone;
 	private String cpf;
+	@Embedded
 	private Endereco endereco;
 	public long getId() {
 		return id;
